@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: rgb(31, 29, 29);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.text h1 {
+    text-transform: capitalize;
+    font-size: 14rem;
+    color: whitesmoke;
+    text-shadow: 10px 10px 40px rgb(66, 64, 64);
+}
+
+.text h1:hover {
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.btn button {
+    padding: 10px 30px;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgb(159, 159, 247);
+    color: whitesmoke;
+    transition: all .5s ease;
+    margin: 0 16px;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgb(66, 64, 64);
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+span {
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    color: red;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    transition: all .4s ease;
+    animation: animate .7s infinite;
+}
+
+@keyframes animate{
+    0% {
+        font-size: 30px;
+    }
+    50% {
+        font-size: 32px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+
+.iptxt input{
+    color: white
+    ;
+    font-size: 20px;
+    padding: 0;
+    padding: 10px 50px;
+    background-color: rgb(31, 29, 29);
+    border: none;
+    border-bottom: 2px solid gray;
+    /* border-radius: 24px; */
+}
+
+#btn-third {
+    display: none;
+}
+
+.iptxt {
+    display: none;
+}
+
+.iptxt input[type='text']:focus {
+    color: white;
+    outline: none;
+    border-bottom: 2px solid  rgb(159, 159, 247);
+}
+
+.iptxt input[type='text']:active {
+    color: white;
+}
+
+.iptxt input[type='submit'] {
+    padding: 10px 30px;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgb(159, 159, 247);
+    color: whitesmoke;
+    transition: all .5s ease;
+    margin: 0 16px;
+}
+
+.iptxt input[type='submit']:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgb(66, 64, 64);
+}
